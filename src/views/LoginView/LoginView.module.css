@@ -3,7 +3,6 @@
   flex-direction: column;
   max-width: 400px;
   margin-bottom: 25px;
-  margin-top: 25px;
 }
 
 .button {
@@ -39,4 +38,8 @@
 .input:focus {
   outline: none;
   box-shadow: 0 0 0 3px lightskyblue;
+}
+
+.form {
+  margin-left: 50px;
 }

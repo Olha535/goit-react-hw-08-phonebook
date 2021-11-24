@@ -1,7 +1,7 @@
 import axios from 'axios';
 import * as actions from './phonebook-actions';
 
-axios.defaults.baseURL = 'http://localhost:4040';
+axios.defaults.baseURL = 'https://connections-api.herokuapp.com';
 
 export const addContact = (name, number) => async dispatch => {
   const contact = {
