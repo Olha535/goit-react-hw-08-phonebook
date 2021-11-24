@@ -1,4 +1,3 @@
-// import { v4 as uuidv4 } from 'uuid';
 import { createAction } from '@reduxjs/toolkit';
 
 export const addContactRequest = createAction('phonebook/addContactRequest');
@@ -22,27 +21,3 @@ export const fetchContactSuccess = createAction(
 export const fetchContactError = createAction('phonebook/fetchContactError');
 
 export const changeFilter = createAction('phonebook/changeFilter');
-
-///////////////////////////////////////////////////
-
-// import { v4 as uuidv4 } from "uuid";
-// import types from "./types";
-
-// const addContact = (name, number) => ({
-//   type: types.ADD,
-//   payload: {
-//     id: uuidv4(),
-//     name,
-//     number,
-//   },
-// });
-
-// const deleteContact = (conactId) => ({
-//   type: types.DELETE,
-//   payload: conactId,
-// });
-
-// const changeFilter = (value) => ({
-//   type: types.CHANGE_FILTER,
-//   payload: value,
-// });

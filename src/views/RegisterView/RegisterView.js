@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import authOperations from '../../redux/auth/auth-operations';
+import { authOperations } from '../../redux/auth';
 import s from './RegisterView.module.css';
 
 function RegisterView() {
@@ -37,7 +37,6 @@ function RegisterView() {
 
   return (
     <div>
-      {/* <h1>Registration</h1> */}
       <form className={s.form} onSubmit={handleSubmit} autoComplete="on">
         <label className={s.label}>
           Name

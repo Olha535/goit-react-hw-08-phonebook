@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import authOperations from '../../redux/auth/auth-operations';
+import { authOperations } from '../../redux/auth';
 import s from './LoginView.module.css';
 
 export default function LoginView() {
@@ -30,7 +30,6 @@ export default function LoginView() {
 
   return (
     <div>
-      {/* <h1>login</h1> */}
       <form className={s.form} onSubmit={handleSubmit} autoComplete="on">
         <label className={s.label}>
           E-mail
